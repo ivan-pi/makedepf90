@@ -1,0 +1,21 @@
+# TOML file for fpm as described at https://fpm.fortran-lang.org/en/spec/manifest.html
+name = "makedepf90"
+version = '2.8.9'
+license = "GPL-2.0"
+author = "Erik Edelmann"
+copyright = "2000-2006 Erik Edelmann"
+description = "Generate make dependencies for Fortran code"
+keywords = ["make", "fortran", "dependencies", "build-system"]
+homepage = "https://github.com/ivan-pi/makedepf90"
+
+#[preprocess]
+#[preprocess.cpp]
+#macros=["VERSION={version}"]
+
+[library]
+include-dir = "include"
+
+[[executable]]
+name = "makedepf90"
+source-dir = "app"
+main = "main.c"

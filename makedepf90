@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+FPM_CC=gcc-14 fpm run --c-flag '-DVERSION=\"2.8.9\"' -- "$@"
